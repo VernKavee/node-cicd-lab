@@ -3,7 +3,7 @@ const http = require('http');
 const requestListener = (req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('This should flag as failed from DevOps Lab!\n');
+    res.end('This should not flag as failed from DevOps Lab! Hello World\n');
 };
 
 const app = http.createServer(requestListener);
